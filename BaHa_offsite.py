@@ -22,7 +22,6 @@ def login_with_captcha(userid, password, url='https://user.gamer.com.tw/login.ph
     session = requests.Session()
     for cookie in cookies:
         session.cookies.set(cookie['name'], cookie['value'])
-    print(session)
     return session
 
 
