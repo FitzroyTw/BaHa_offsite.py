@@ -98,5 +98,3 @@ def offsite():
             input('任意鍵返回')
         except requests.RequestException as e:
             print(f"發生錯誤: {e}")
-
-offsite()
