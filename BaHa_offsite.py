@@ -26,7 +26,7 @@ def login_with_captcha(userid, password, url='https://user.gamer.com.tw/login.ph
 
 
 def offsite():
-    session = login_with_captcha('your id', 'your password')
+    session = login_with_captcha('kdoomn6132', 'soldcyy987654321')
     while True:
         try:
             url = 'https://forum.gamer.com.tw/B.php?bsn=60076'
@@ -98,3 +98,5 @@ def offsite():
             input('任意鍵返回')
         except requests.RequestException as e:
             print(f"發生錯誤: {e}")
+
+offsite()
