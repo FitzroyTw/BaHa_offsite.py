@@ -20,7 +20,6 @@ def login_with_captcha(userid, password, url='https://user.gamer.com.tw/login.ph
     cookies = driver.get_cookies()
     driver.quit()
     session = requests.Session()
-    test=0
     for cookie in cookies:
         session.cookies.set(cookie['name'], cookie['value'])
     return session
@@ -99,5 +98,3 @@ def offsite():
             input('任意鍵返回')
         except requests.RequestException as e:
             print(f"發生錯誤: {e}")
-
-offsite()
